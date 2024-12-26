@@ -1,5 +1,6 @@
 import React from 'react'
-import SearchCharacterPage from './SearchCharacterPage'
+import { NavLink } from "react-router";
+
 
 function Home() {
   return (
@@ -7,7 +8,9 @@ function Home() {
         <h1>
             HOME
         </h1>
-        <SearchCharacterPage />
+        <NavLink to="/search" >
+        Ir a buscar personaje
+        </NavLink>
 
     </div>
   )

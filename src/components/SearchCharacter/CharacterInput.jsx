@@ -1,5 +1,6 @@
 import React, { useRef, useContext } from 'react'
 import { CharacterContext } from './CharacterContext';
+import { NavLink } from "react-router";
 
 function CharacterInput() {
   const {setSearch, setPage} = useContext(CharacterContext); // nuevo seteo para el onSearch, el antigui
@@ -29,9 +30,9 @@ const  handleOnSearch = () => {
             >
                 BUSCAR
             </button>
-            <button>
-              ver mas
-            </button>
+
+            <NavLink to="/home">Volver</NavLink>
+
 
     </div>
   )
