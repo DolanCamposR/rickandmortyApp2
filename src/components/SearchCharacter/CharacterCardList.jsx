@@ -28,7 +28,7 @@ function CharacterCardlist() {
             <Card>
               <CardMedia
                 component="img"
-                height="200"
+                height="400"
                 image={character.image}
                 alt={character.name}
               />
@@ -38,7 +38,7 @@ function CharacterCardlist() {
                 </Typography>
                 <Button
                   variant="contained"
-                  color="primary"
+                  color="warning"
                   onClick={() => handleSelectCharacter(character)}
                 >
                   Ver más

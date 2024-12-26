@@ -10,6 +10,9 @@
   import TableRow from "@mui/material/TableRow";
   import Paper from "@mui/material/Paper";
   import Button from "@mui/material/Button";
+  import CloseIcon from '@mui/icons-material/Close';
+  import iconButton from "@mui/material/IconButton";
+
 
   const CharacterModal = ({ selectedCharacter, onClose }) => {
     if (!selectedCharacter) return null;
@@ -36,7 +39,10 @@
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={{ p: 3, maxWidth: 500, margin: "auto", backgroundColor: "gray", borderRadius: "8px" }}>
+        <Box sx={{ p: 3, maxWidth: 500, margin: "auto", backgroundColor: "gray", borderRadius: "8px" }} >
+          <Button variant="contained" color="secondary" onClick={onClose} sx={{ justifyContent: "flex-end" }}>
+            Cerrar
+          </Button>
           <Typography variant="h6" id="modal-modal-title" gutterBottom>
             {selectedCharacter.name}
           </Typography>
